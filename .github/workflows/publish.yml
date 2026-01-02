@@ -8,16 +8,27 @@ on:
   push:
     branches:
       - master
-      - dev
+      # dev: run manually via workflow_dispatch
 
 name: Quarto Publish
 
 jobs:
   build-deploy:
+    # dev: manual only (workflow_dispatch)
+    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     env:
       NETLIFY_CHECK_ONLY: false
     steps:
+      - name: Debug workflow context
+        run: |
+          set -e
+          echo "event_name=${{ github.event_name }}"
+          echo "ref=${{ github.ref }}"
+          echo "sha=${{ github.sha }}"
+          echo "actor=${{ github.actor }}"
+          echo "head_commit_message=${{ github.event.head_commit.message }}"
+
       - name: Check out repository
         uses: actions/checkout@v4
 
