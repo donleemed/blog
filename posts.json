@@ -1,5 +1,52 @@
 [
   {
+    "title": "비정규 분포의 데이터에 GEE를 사용할 수 있을까?",
+    "description": "Outcome의 비정규성으로 인해 분석 모델 선택에 혼동을 겪게 될때, LMM과 GEE의 적절한 사용 방법과 데이터 상황에 맞는 최적의 상관구조 선택 전략에 대해 알아본다.",
+    "categories": [
+      "R"
+    ],
+    "author": {
+      "name": "Sangho Oh",
+      "email": "godqhrsangho01@daum.net",
+      "url": "https://github.com/sjt8mpdzvx-cmd"
+    },
+    "image": "img/logo.png",
+    "fig_width": 400,
+    "date": "2026-01-02",
+    "format": "html",
+    "execute": {
+      "freeze": true
+    },
+    "draft": false,
+    "license": "CC BY-NC",
+    "path": "/posts/2026-01-02-LMM, GEE/index.html",
+    "subtitle": ""
+  },
+  {
+    "title": "마우스 드래그로 끝내는 PDF 테이블 추출: tabulapdf",
+    "description": "PDF 파일에 있는 테이블을 마우스 드래그로 쉽게 읽을 수 있는 tabulapdf 패키지를 소개합니다.\n",
+    "categories": [
+      "R",
+      "Rpackage"
+    ],
+    "author": {
+      "name": "Wonbin Hahn",
+      "email": "andrewhahn2001@gmail.com",
+      "url": "https://github.com/wbhahn"
+    },
+    "image": "img/logo.png",
+    "fig_width": 400,
+    "date": "2025-12-17",
+    "format": "html",
+    "execute": {
+      "freeze": true
+    },
+    "draft": false,
+    "license": "CC BY-NC",
+    "path": "/posts/2025-12-17-tabulapdf/index.html",
+    "subtitle": ""
+  },
+  {
     "title": "코호트 연구의 핵심, 대조군의 Index date 설정",
     "description": "코호트 연구에서 치료군과 대조군의 Index Date를 설정하는 방법을 알아보자\n",
     "categories": [
